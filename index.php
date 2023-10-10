@@ -54,7 +54,7 @@ include 'config.php';
               <div class="hero-img">
                 <img class="" src="img/female/pants.jpg" alt="" />
               </div>
-              <button class="btn-link" data-link="shirts-women">Shirts</button>
+              <button class="btn-link" data-link="dress-women">Dress</button>
             </div>
             <div class="hero-link">
               <div class="hero-img">

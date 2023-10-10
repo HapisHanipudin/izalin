@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 09, 2023 at 02:56 PM
+-- Generation Time: Oct 10, 2023 at 02:03 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -69,7 +69,8 @@ INSERT INTO `cart` (`cart_id`, `user_id`, `product_id`, `quantity`) VALUES
 (2, '65210ca34e18d', 'SHRT-WMN65240413389c0', 1),
 (3, '65241303e9a4f', 'SHRT-MN6523ff3ab1c5c', 1),
 (4, '65241303e9a4f', 'SHRT-MN6524007b05b7e', 1),
-(5, '65241303e9a4f', 'SHS-MN6524054f1f542', 1);
+(5, '65241303e9a4f', 'SHS-MN6524054f1f542', 1),
+(6, '652125b98f02d', 'SHRT-MN6524007b05b7e', 1);
 
 -- --------------------------------------------------------
 
@@ -174,7 +175,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `cart_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables

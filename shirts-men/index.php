@@ -22,7 +22,7 @@ $wrapperWidth = ($numRows + 1) * 100;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../navfooter.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../malestyle.css" />
     <!-- <link rel="stylesheet" href="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.css" /> -->
   </head>
   <body>
@@ -150,7 +150,7 @@ $wrapperWidth = ($numRows + 1) * 100;
         </section> -->
       </div>
     </div>
-
+<!-- 
     <section id="testi">
       <div class="testi">
         <div class="testeks">
@@ -164,7 +164,57 @@ $wrapperWidth = ($numRows + 1) * 100;
           <img src="../img/male/shoes.jpg" alt="" />s
         </div>
       </div>
-    </section>
+    </section> -->
+
+            <!-- card -->
+    <div class="container-card">
+        <div class="app anim-card">
+            <div class="cardList">
+
+                <div class="cards__wrapper">
+
+                    <div class="card current--card">
+                        <div class="card__image">
+                            <img src="../uploads/6524007b05b811.43439323_id-11134201-23030-c0yxxhxt9hov50-removebg-preview.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="card next--card">
+                        <div class="card__image">
+                            <img src="../img/maan.jpg" alt="" />
+                        </div>
+                    </div>
+
+                    <div class="card previous--card">
+                        <div class="card__image">
+                            <img src="../uploads/6524012d296cb0.46465785_id-11134207-23020-rgz2zm5qi2nv95-removebg-preview.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- text -->
+    <div class="container-create">
+        <div class="main-text">
+            <div class="heading">
+                <h2>
+                    <span id="create">appear in a handsome </span>
+                </h2>
+                <h2>
+                    <span id="create">and handsome version</span>
+                </h2>
+                <h2>
+                    <span id="create">with appropriate clothes</span>
+                </h2>
+
+            </div>
+        </div>
+    </div>
 <?php require '../footer.php' ?>
 
 
