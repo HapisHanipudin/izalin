@@ -410,7 +410,7 @@ a img {
 .cartxt {
   display: flex;
   flex-direction: column;
-  gap: 0.1em;
+  align-content: space-around;
 }
 
 .cart.show {
@@ -449,12 +449,12 @@ a img {
 
 .cart-footer {
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
   left: 0;
   /* right: 0; */
   display: flex;
   width: 100%;
-  padding: 15px;
+  padding: 25px 15px;
   flex-direction: column;
   gap: 1rem;
 }

@@ -33,8 +33,24 @@ const closeBtn = cart.querySelector(".close");
 
 cartBtn.addEventListener("click", () => {
   cart.classList.toggle("show");
+  cartTotal();
 });
 
 closeBtn.addEventListener("click", () => {
   cart.classList.toggle("show");
 });
+
+function cartTotal() {
+  var spanElements = document.querySelectorAll(".item-price"); // Mengambil semua elemen <span>
+  var total = 0; // Inisialisasi total
+  const totalPrice = document.querySelector(".total");
+
+  spanElements.forEach(function (spanElement) {
+    var text = spanElement.textContent;
+    var number = parseFloat(text.replace("Harga : Rp", ""));
+    total += number; // Menjumlahkan number ke total
+  });
+
+  totalPrice.innerHTML = "Rp" + total;
+  console.log(total); // Hasil akhirnya adalah total dari semua angka dalam elemen <span>
+}

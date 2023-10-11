@@ -58,9 +58,9 @@ if (mysqli_num_rows($cartresult) > 0) { while ($cartrow = mysqli_fetch_assoc($ca
       <img src="uploads/'. $cartrow['product_image'] .'" alt="">
     </div>
     <div class="cartxt">
-      <h3>'. $cartrow['product_name1'] . $cartrow['product_name2'].'</h3>
+      <h3>'. $cartrow['product_name1'].' '.$cartrow['product_name2'].'</h3>
       <p>'. $cartrow['product_desc'] .'.</p>
-      <p>Harga : '. $cartrow['product_price'] .'</p>
+      <p class="item-price">Harga : Rp'. $cartrow['product_price'] * $cartrow['quantity'] .'</p>
 <div class="quant">
 <button class="quant-btn">-</button>
       <span>'. $cartrow['quantity'] .'</span>
@@ -70,7 +70,7 @@ if (mysqli_num_rows($cartresult) > 0) { while ($cartrow = mysqli_fetch_assoc($ca
   </div>
 
         '; } } else { echo '
-          <h2 style="opacity: 70%">Belum Ada Barang untuk ditampilkan</h2>
+          <h2 style="opacity: 70%; align-self: center;">Belum Ada Barang untuk ditampilkan</h2>
           '; }
 
 ?>
@@ -79,7 +79,7 @@ if (mysqli_num_rows($cartresult) > 0) { while ($cartrow = mysqli_fetch_assoc($ca
 
 <div class="cart-footer">
   <span>Total Price :</span>
-  <h3>Calculating</h3>
+  <h3 class="total">Calculating</h3>
 </div>
 
 </div>    
